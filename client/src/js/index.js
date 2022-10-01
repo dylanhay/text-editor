@@ -25,7 +25,7 @@ if (typeof editor === 'undefined') {
 }
 
 window.addEventListener('load', function () {
-  document.getElementsByClassName('navbar-brand').src = Logo;
+  document.getElementById('logo').src = Logo;
 });
 
 // Check if service workers are supported
