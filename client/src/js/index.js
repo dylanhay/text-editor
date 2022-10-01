@@ -3,7 +3,7 @@ import Editor from './editor';
 import './database';
 import '../css/style.css';
 import Logo from '../images/logo.png';
-import { initdb } from './database';
+import { initdb, getDb } from './database';
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
@@ -28,6 +28,7 @@ if (typeof editor === 'undefined') {
 window.addEventListener('load', function () {
   initdb();
   document.getElementById('logo').src = Logo;
+  getDb();
 });
 
 // Check if service workers are supported
