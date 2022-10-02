@@ -1,5 +1,6 @@
 import { openDB } from "idb";
 
+//initialize db
 export const initdb = async () =>
   openDB("jate", 1, {
     upgrade(db) {
@@ -12,10 +13,12 @@ export const initdb = async () =>
     },
   });
 
+
+//update db
 export const putDb = async (content) => {
   console.log("PUT to the database");
 
-  // Create a connection to the database and specify the version we want to use.
+  // Create a connection to the database and specify the version to be used
   const contactDb = await openDB("jate", 1);
 
   // Create a new transaction and specify the store and data privileges.
@@ -36,7 +39,7 @@ export const putDb = async (content) => {
 };
 
 
-// Export a function we will use to GET to the database.
+// read db
 export const getDb = async () => {
   console.log('GET from the database');
 

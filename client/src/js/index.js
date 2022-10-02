@@ -3,8 +3,6 @@ import Editor from "./editor";
 import "./database";
 import "../css/style.css";
 
-// import Logo from "../images/logo.png";
-
 const main = document.querySelector("#main");
 main.innerHTML = "";
 
@@ -24,10 +22,6 @@ const editor = new Editor();
 if (typeof editor === "undefined") {
   loadSpinner();
 }
-
-// window.addEventListener("load", function () {
-//   document.getElementById("logo").src = Logo;
-// });
 
 // Check if service workers are supported
 if ("serviceWorker" in navigator) {
