@@ -17,7 +17,7 @@ https://opensource.org/licenses/MIT
 [Contribution](#contribution) 
 
 ## Deployed Application
-https://glacial-sands-55667.herokuapp.com/
+https://text-editor-dch.herokuapp.com/
 
 ## Built With
 * Node.js
